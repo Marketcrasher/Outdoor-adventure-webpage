@@ -1,0 +1,209 @@
+/* Julian Zarcone 000878972 */
+{
+    margin: 0;
+    padding: 0;  
+}
+
+h1,h2 { 
+    margin:25px 15px;
+    color: white;
+}
+
+h3,h4,h5,h6 {
+    color: black;    
+}
+
+h1.2{
+    text-align: center;
+    color: black;
+}
+
+
+.contaninermain{
+    display:grid;
+    grid-template-areas: "header header header"
+                "nav nav nav"
+                "left main right"
+                "credits credits credits"
+                "footer footer footer";
+    height: 100vh;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 25px;
+    overflow-x: hidden;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.c1{
+    grid-area: header;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+}
+
+.c2{
+    grid-area: nav;
+    margin-bottom:15px;
+}
+
+.line{
+    border: 1px solid rgb(201, 201, 201);
+    border-radius:50%;
+    height: 200px;
+    vertical-align: middle;
+}
+
+.trails{
+    background-color: #CEECFE;
+    border: solid 1px black;
+    margin-top: 15px;
+}
+
+h3{
+    background-color: #0172BA;
+    color:white;
+    text-align: center;
+}
+
+.c3{
+    grid-area: left;
+    margin-left: 100px;
+    margin-right: 0px;
+    width:150px;
+    padding-bottom: 20px;
+}
+.gimages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-top:10px;
+    border: 1px solid black;
+    width:150px;
+    height: 150px;
+    width:100%;
+    padding: 1px
+}
+
+.c4{
+    grid-area: main;
+}
+.c5{
+    grid-area: right;
+    min-width: 200px;
+    max-width: auto;
+    margin-right:100px;
+}
+
+.c6{
+    margin-right:95px;
+    margin-left:95px;
+    border-top: 1px solid #0172BA;
+    border-bottom: 1px solid #0172BA;
+    font-size:13px;
+    margin-top:10px;
+   
+}
+
+.c6{
+    grid-area: credits;
+}
+.c7{
+    grid-area: footer;
+}
+.buttons{
+    margin-top:75px;
+}
+.buttons a{
+    border-radius:55px;
+    padding:7px;
+    margin-left:20px;
+    color: white;
+    text-decoration: none;
+    background-color:#0172BA;
+}
+.buttons a:hover{
+    background-color:#089247;
+}
+header .social{
+    margin-top:75px;
+  
+}
+
+h7{
+    border-bottom: 1px solid #0172BA;
+    font-weight: 750;
+    font-size: 12px;
+    width:170px;
+}
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .tooltip .tooltiptext {
+    width: auto;
+    padding: 1px 0;
+    color: #0172BA;
+    text-align: center;
+    border-radius: 6px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+nav{
+    background-color:#ECF7FE;
+    top:0;
+    border-bottom:solid 2px #0172BA
+    position: -webkit-sticky;
+    position: sticky;
+    border-top: solid 1px #0172BA;
+    height:auto;
+    width: 100%;
+}
+nav ul {
+    justify-content: center; 
+    display: flex; 
+}
+
+nav ul li{
+    list-style-type: none;
+    padding:20px;
+}
+
+nav ul li a{
+    color:#0172BA;
+    text-decoration: none;
+    border-radius:50px;
+    border:solid 1.5px #0172BA;
+    background-color: white;
+    display: block;
+    padding: 5px 16px;
+    text-align:center; 
+}
+nav ul li a:hover{
+    background-color: #003557;
+    
+}
+
+footer{
+    margin-top:25px;
+    display: flex;
+    background-color: #ECF7FE;;
+    border-top:solid 1px #0172BA;
+    border-bottom:solid 1px #0172BA;
+    justify-content: space-between; 
+    padding:15px;
+}
+
+footer p{
+    font-size: 12px;
+}
